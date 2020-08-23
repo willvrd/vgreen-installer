@@ -16,7 +16,7 @@ class VgreenInstaller extends LibraryInstaller
         $p1 = explode("/",$package->getPrettyName());
         $p2 = explode("-",$p1[1]);
 
-        $nModule = $p2[0];
+        $nModule = ucfirst($p2[0]);
         
         return 'Modules/'.$nModule;
     }
@@ -26,6 +26,6 @@ class VgreenInstaller extends LibraryInstaller
      */
     public function supports($packageType)
     {
-        return 'greenlaravel-module' === $packageType;
+        return 'vgreen-module' === $packageType;
     }
 }

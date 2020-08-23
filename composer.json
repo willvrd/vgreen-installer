@@ -1,6 +1,14 @@
 {
     "name": "willvrd/vgreen-installer",
+    "description": "VGreen installer to VG Modules",
     "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "William Verde",
+            "email": "wavutes@gmail.com",
+            "homepage": "https://ingwilliamverde.wordpress.com/"
+        }
+    ],
     "license": "MIT",
     "autoload": {
         "psr-4": {
