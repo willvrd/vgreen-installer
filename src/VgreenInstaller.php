@@ -13,10 +13,8 @@ class VgreenInstaller extends LibraryInstaller
     public function getInstallPath(PackageInterface $package)
     {
         
-        echo "AQUI: ".$package->getPrettyName();
-
         $p1 = explode("/",$package->getPrettyName());
-        $p2 = explode("-",$p1);
+        $p2 = explode("-",$p1[1]);
 
         $nModule = $p2[0];
         
